@@ -5,14 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.dfcuandroid"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.dfcuandroid"
-        minSdk = 37
-        targetSdk = 37
+        minSdk = 23
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +34,7 @@ android {
 }
 
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(17)
 }
 
 dependencies {
